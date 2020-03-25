@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- author= lukas splinter -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="/css/order.css">
+  <script src="js/order.js" charset="utf-8"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <title>Order product</title>
+</head>
+<body>
+  <main>
+    <div class="header">
+    <a href="index.html" class="logo"><img class="headerlogo" src="img/logo.png" alt="Alibaba Group"></a>
+    <div class="header-right">
+      <a href="#home">Home</a>
+      <a class="active" href="#order">Order</a>
+      <a href="#voorraad">Cart</a>
+    </div>
+  </div>
+
+    <div class="orderContainer" id="js--orderContainer">
+      <div class="order" id="js--orderTemplate">
+        <div class="formPair">
+          <label for="product">product</label>
+          <input type="text" name="product" value="naam product" onfocus="this.value=''" class="js--orderNaam">
+        </div>
+        <div class="formPair">
+          <label for="aantal">aantal</label>
+          <input type="number" name="aantal" value="1" min="0" max="1000"  class="js--orderAantal">
+        </div>
+        <div class="formPair">
+          <label for="totaalprijs">totaalprijs</label>
+          <input type="text" name="prijs" value="€ 0" disabled="true" class="js--orderPrijs">
+        </div>
+      </div>
+    </div>
+    <div class="controlBar">
+      <div class="buttonContainer">
+        <div class="button controlBar__confirmButton" id="js--confirmButton">confirm</div>
+        <div class="button controlBar__resetButton" id="js--resetButton">clear</div>
+      </div>
+    </div>
+    <div class="addOrder" id="js--addOrderButton"><p>&#10010</p></div>
+  </main>
+</body>
+</html>
