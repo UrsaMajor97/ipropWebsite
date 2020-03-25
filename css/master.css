@@ -127,6 +127,215 @@ a.logo {
   padding: 2px 16px;
 }
 
+.card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+
+}
+
+.productImage {
+    width: 100%;
+    pointer-events: none;
+}
+
+.product {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.productName {
+    padding: 0;
+    margin: 0.5em;
+    pointer-events: none;
+}
+
+.productDescription {
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+.details {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: opacity 300ms;
+}
+
+.details.is-visible {
+    display: block;
+    opacity: 100;
+}
+
+.detailsDialog {
+    width: calc(60vw - 80px);
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.detailsBackground {
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.detailsName {
+    font-size: 1.8em;
+    margin: 0 0 0.5em 0;
+}
+
+.details figure {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.detailsImage {
+    display: block;
+    margin: auto;
+    max-height: 300px;
+}
+
+.detailsCancel {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    display: block;
+}
+
+.orderContainer{
+    width: 70vw;
+    margin: 0 15vw;
+}
+
+.order{
+    width: 70vw;
+    height: 30vw;
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 20px;
+}
+.order:first-of-type{
+    margin-top: 20px;
+}
+.order:last-of-type{
+    margin-bottom: 100px;
+}
+
+.controlBar{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    border-top: 1px solid #999;
+    padding: 10px 0;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.button{
+    font-family: 'Roboto', sans-serif;
+    height: 20px;
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    -webkit-box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.5);
+    transition: 0.2s all;
+    float: right;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.buttonContainer{
+    float: right;
+    margin: 0 15vw;
+}
+
+.button:hover{
+    transform: scale(0.96);
+}
+
+.controlBar__resetButton{
+    background-color: #ddd;
+}
+
+.controlBar__confirmButton{
+    background-color: #00b01a;
+}
+
+.addOrder{
+    width: 40px;
+    height: 40px;
+    background-color: #FF6A00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.5);
+    position: fixed;
+    bottom: 15vh;
+    right: 10vw;
+}
+.addOrder:hover{
+    -webkit-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
+}
+.addOrder p{
+    font-size: 20px;
+    text-align: center;
+    transform: translate(0px, -1px);
+}
+
+.formPair{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+}
+
+.formPair label{
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px 0;
+}
+
+.formPair input{
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+}
+
 
 @media screen and (max-width: 700px) {
 	.header a {
