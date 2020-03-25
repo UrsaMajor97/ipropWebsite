@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f1f1f1;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+p {
+	font-size: 14px;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+a.logo {
+  padding: 0;
+
+}
+
+.headerlogo {
+  width: 100px;
+}
+
+.header-right {
+  float: right;
+}
+
+.homepagina {
+  width: 100%;
+  height: 100%;
+}
+
+.suppliers-grid {
+  display: grid;
+  column-gap: 25px;
+  grid-template-columns: auto auto auto;
+  padding: 20px 30px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.card img {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 2px 16px;
+}
+
+
+@media screen and (max-width: 700px) {
+	.header a {
+		padding-left: 10px;
+	}
+
+	.suppliers-grid {
+	  grid-template-columns: auto;
+		row-gap: 30px;
+	  padding: 30px 50px;
+	}
+}
