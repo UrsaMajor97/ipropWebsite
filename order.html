@@ -17,27 +17,26 @@
 <body>
   <main>
     <div class="header">
-    <a href="index.html" class="logo"><img class="headerlogo" src="img/logo.png" alt="Alibaba Group"></a>
-    <div class="header-right">
-      <a href="index.html">Home</a>
-      <a class="active" href="order.html">Order</a>
-      <a href="#voorraad">Cart</a>
+      <a href="index.html" class="logo"><img class="headerlogo" src="img/logo.png" alt="Alibaba Group"></a>
+      <div class="header-right">
+        <a class="active" href="index.html">Home</a>
+        <a href="order.html">Order</a>
+      </div>
     </div>
-  </div>
 
     <div class="orderContainer" id="js--orderContainer">
       <div class="order" id="js--orderTemplate">
         <div class="formPair">
           <label for="product">product</label>
-          <input type="text" name="product" value="naam product" onfocus="this.value=''" class="js--orderNaam">
+          <input id="product" type="text" name="product" value="naam product" onfocus="this.value=''" class="js--orderNaam">
         </div>
         <div class="formPair">
           <label for="aantal">aantal</label>
-          <input type="number" name="aantal" value="1" min="0" max="1000"  class="js--orderAantal">
+          <input id="aantal" type="number" name="aantal" value="1" min="0" max="1000"  class="js--orderAantal">
         </div>
         <div class="formPair">
           <label for="totaalprijs">totaalprijs</label>
-          <input type="text" name="prijs" value="€ 0" disabled="true" class="js--orderPrijs">
+          <input id="totaalprijs" type="text" name="prijs" value="€ 0" disabled="" class="js--orderPrijs">
         </div>
       </div>
     </div>
