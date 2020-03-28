@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- author= lukas splinter -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -15,38 +14,44 @@
   <title>Order product</title>
 </head>
 <body>
-  <main>
-    <div class="header">
-      <a href="index.html" class="logo"><img class="headerlogo" src="img/logo.png" alt="Alibaba Group"></a>
-      <div class="header-right">
-        <a class="active" href="index.html">Home</a>
-        <a href="order.html">Order</a>
-      </div>
+<main>
+  <div class="header">
+    <a href="index.html" class="logo"><img class="headerlogo" src="img/logo.png" alt="Alibaba Group"></a>
+    <div class="header-right">
+      <a class="active" href="index.html">Home</a>
+      <a href="order.html">Order</a>
     </div>
+  </div>
 
-    <div class="orderContainer" id="js--orderContainer">
-      <div class="order" id="js--orderTemplate">
-        <div class="formPair">
-          <label for="product">product</label>
-          <input id="product" type="text" name="product" value="naam product" onfocus="this.value=''" class="js--orderNaam">
-        </div>
-        <div class="formPair">
-          <label for="aantal">aantal</label>
-          <input id="aantal" type="number" name="aantal" value="1" min="0" max="1000"  class="js--orderAantal">
-        </div>
-        <div class="formPair">
-          <label for="totaalprijs">totaalprijs</label>
-          <input id="totaalprijs" type="text" name="prijs" value="€ 0" disabled="" class="js--orderPrijs">
-        </div>
+  <div class="orderContainer" id="js--orderContainer">
+    <div class="order" id="js--orderTemplate">
+      <div class="formPair">
+        <label for="product">product</label>
+        <select class="js--orderNaam" name="product" id="js--orderSelect">
+
+        </select>
+      </div>
+      <div class="formPair">
+        <label for="aantal">quantity</label>
+        <input id="aantal" type="number" name="aantal" value="1" min="1" max="1000"  class="js--orderAantal">
+      </div>
+      <div class="formPair">
+        <label for="totaalprijs">total price</label>
+        <input id="totaalprijs" type="text" name="prijs" value="€ 0" disabled="" class="js--orderPrijs">
+      </div>
+      <div class="formPair">
+        <label for="supplier">supplier</label>
+        <input id="supplier" type="text" name="supplier" value="supplier 1" disabled="" class="js--orderSupplier">
       </div>
     </div>
-    <div class="controlBar">
-      <div class="buttonContainer">
-        <div class="buttonOrder controlBar__confirmButton" id="js--confirmButton">confirm</div>
-        <div class="buttonOrder controlBar__resetButton" id="js--resetButton">clear</div>
-      </div>
+  </div>
+  <div class="controlBar">
+    <div class="buttonContainer">
+      <div class="buttonOrder controlBar__confirmButton" id="js--confirmButton">confirm</div>
+      <div class="buttonOrder controlBar__resetButton" id="js--resetButton">clear</div>
     </div>
-    <div class="addOrder" id="js--addOrderButton"><p>&#10010</p></div>
-  </main>
+  </div>
+  <div class="addOrder" id="js--addOrderButton"><p>&#10010</p></div>
+</main>
 </body>
 </html>
