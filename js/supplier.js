@@ -15,9 +15,10 @@ function showDetails(event)
         console.log(event.target.dataset.name);
 
         document.querySelector("#js--detailsName").innerText = event.target.dataset.name;
-        document.querySelector("#js--detailsImage").src = "img/supplier3/" + event.target.dataset.img + ".png";
+        document.querySelector("#js--detailsImage").src = "img/products/" + event.target.dataset.img + ".png";
         document.querySelector("#js--detailsDescription").innerText = event.target.dataset.description;
-        document.querySelector("#js--detailsPrice").innerText = event.target.dataset.price;
+        document.querySelector("#js--detailsPrice").innerText = "€" + event.target.dataset.price;
+        document.querySelector("#js--detailsStock").innerText = "Stock: " + event.target.dataset.stock;
 
         document.querySelector("#js--details").classList.add("is-visible");
     }
